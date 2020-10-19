@@ -1,0 +1,25 @@
+.copy__button {
+    background-color: var(--color);
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.2vw;
+    font-family: 'Passion One', cursive;
+    border: none;
+}
+
+.copy__button:focus {
+    background: var(--color);
+}
+
+.copy__button:active {
+    background: #40a9ff;
+}
+
+.ant-notification-notice {
+    background-color: var(--color);
+    font-family: 'Passion One', cursive;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    border: 1px solid white;
+}

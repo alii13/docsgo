@@ -1,0 +1,149 @@
+#ripple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  margin-top: -50px;
+}
+
+.circle {
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  border: 30px solid var(--color);
+  border-radius: 50%;
+  animation: wave 1.2s linear 0s infinite;
+}
+
+.circle:nth-child(1) {
+  border: 1px solid var(--color);
+  animation: none;
+}
+
+.circle:nth-child(2) {
+  animation: none;
+}
+
+.circle:nth-child(3) {
+  animation-delay: 0ms;
+}
+
+.circle:nth-child(4) {
+  animation-delay: 600ms;
+}
+
+.circle:nth-child(5) {
+  animation-delay: 900ms;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.waiting__wrapper {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  position: relative;
+}
+
+.room__title {
+  margin-top: 70px;
+  width: 100vw !important;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.waititng {
+  text-align: center;
+  width: 100%;
+}
+
+.choose__file {
+  width: 160px;
+  height: 65px;
+  margin-left: 15px;
+  font-size: 15px;
+  background-color: var(--color) !important;
+  border: none;
+  display: none;
+}
+
+.file__wrapper {
+  display: flex;
+  width: fit-content;
+}
+
+.file__name {
+  margin-left: 14px;
+}
+
+.joined {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.connected {
+  display: flex;
+  flex-direction: column !important;
+  position: relative;
+  border: 2px solid var(--color);
+  border-radius: 15px;
+}
+
+.connected h4 {
+  color: var(--secondary-color);
+}
+
+h4.container__description__heading {
+  position: absolute;
+  top: 10%;
+}
+
+.controls {
+  position: absolute;
+  /* width: 40vw; */
+  bottom: 20%;
+}
+
+button.control__icon {
+  font-size: 2em;
+  color: #eeeeee;
+  background: none;
+  padding: 10px;
+  font-family: 'Passion One', cursive;
+  border-radius: 5px;
+  font-weight: bolder;
+  border: 2px solid #32e0c4;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+button.control__icon:active {
+  background-color: #29caaf;
+  color: white;
+}
+
+.room__copy__link {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.copy__button {}
